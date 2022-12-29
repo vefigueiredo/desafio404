@@ -9,6 +9,7 @@ import Ihavebad from './components/Ihavebad/Ihavebad'
 import Thepage from './components/Thepage/Thepage'
 import Espantalho from './components/Espantalho/Espantalho'
 import Botaoback from './components/Botaoback/Botaoback'
+import Createdby from './components/Createdby/Createdby'
 import Footer from './components/Footer/Footer'
 import Image from './components/Image/Image'
 import Main from './components/Main/Main'
@@ -53,6 +54,8 @@ MapTo('vue/components/thepage')(Thepage)
 MapTo('vue/components/espantalho')(Espantalho)
 
 MapTo('vue/components/botaoback')(Botaoback)
+
+MapTo('vue/components/createdby')(Createdby)
 
 // Header Component Mapping
 MapTo('vue/components/main')(Main, EditConfig)

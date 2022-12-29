@@ -1,5 +1,5 @@
 <template>
-  <img :src="src" />
+  <img :src="src" class="header"/>
 </template>
 
 <script>
@@ -15,7 +15,8 @@ export default {
 </script>
 
 <style scoped>
-img {
+
+.header {
   position: absolute;
   left: 5.35%;
   right: 57.21%;
@@ -26,4 +27,19 @@ img {
   top: 265px;
   left: 77px;
 }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    position: absolute;
+    left: 11.73%;
+    right: 11.78%;
+    top: 11.49%;
+    bottom: 63.44%;
+    width: 286.83px;
+    height: 238px;
+    top: 109px;
+    left: 44px;
+  }
+}
+
 </style>

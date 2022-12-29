@@ -5,11 +5,11 @@
 <script>
 
 export default {
-  name: 'Ihavebad',
+  name: 'Createdby',
   props: {
     text: {
       type: String,
-      default: 'I have bad news for you'
+      default: 'Created by Vinicius - devChallenges.io'
     }
   }
 }
@@ -20,38 +20,40 @@ export default {
 
 .header {
   position: absolute;
-  width: 586px;
-  height: 190px;
-  left: 735px;
-  top: 265px;
+  width: 287px;
+  height: 17px;
+  left: 577px;
+  top: 1039px;
 
-  font-family: 'Space Mono';
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 95px;
-  letter-spacing: -0.035em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
 
-  color: #333333;
+  text-align: center;
+
+  color: #BDBDBD;
 
 }
 
 @media only screen and (max-width: 600px) {
   .header {
     position: absolute;
-    width: 350px;
-    height: 142px;
-    left: 24px;
-    top: 407px;
+    width: 287px;
+    height: 17px;
+    left: 46px;
+    top: 908px;
 
-    font-family: 'Space Mono';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 71px;
-    letter-spacing: -0.035em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
 
-    color: #333333;
+    text-align: center;
+
+    color: #BDBDBD;
   }
 }
 
