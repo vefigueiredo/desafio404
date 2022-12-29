@@ -1,0 +1,62 @@
+#ckeckbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #111111;
+    width: 100%;
+
+    input {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+        background-color: #fff;
+        border: 2px solid #aaa;
+        border-radius: 2px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:after {
+            width: 18px;
+            height: 18px;
+            border-radius: 2px;
+            content: "\2714";
+            background-color: #074EE8;
+            font-size: 12px;
+            color: #ffffff;
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &:hover {
+            background: #111827;
+        }
+
+        &:checked {
+            display: flex;
+            border: 0;
+
+
+        }
+
+        &:checked::after {
+            display: flex;
+        }
+    }
+
+    label {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: start;
+        cursor: pointer;
+    }
+}

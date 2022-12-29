@@ -1,0 +1,40 @@
+{
+  "project-settings": {
+    "code-owner": "SPA Vue Project",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "vue",
+    "model-interface-pkg": "com.vue.core.models",
+    "model-impl-pkg": "com.vue.core.models.impl"
+  },
+  "name": "select",
+  "title": "Vue - Select",
+  "group": "SPA Vue Project - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "valorInicial",
+        "label": "Digite um valor inicial",
+        "type": "textfield",
+        "json-expose": true,
+        "json-property": "valorInicial"
+      }
+    ]
+  }
+}
