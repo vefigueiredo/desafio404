@@ -1,0 +1,50 @@
+{
+  "project-settings": {
+    "code-owner": "SPA Vue Project",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "vue",
+    "model-interface-pkg": "com.vue.core.models",
+    "model-impl-pkg": "com.vue.core.models.impl"
+  },
+  "name": "checkbox",
+  "title": "Vue - Checkbox",
+  "group": "SPA Vue Project - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "items",
+        "type": "multifield",
+        "label": "Meus Itens",
+        "model-name": "items",
+        "use-existing-model": false,
+        "json-expose": true,
+        "items": [
+          {
+            "field": "items.type",
+            "type": "textfield",
+            "label": "Tipo de Input",
+            "json-expose": true,
+            "json-property": "items.type"
+          }
+        ]
+      }
+    ]
+  }
+}

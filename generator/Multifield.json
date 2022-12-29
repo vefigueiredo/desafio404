@@ -1,0 +1,91 @@
+{
+  "project-settings": {
+    "code-owner": "SPA Vue Project",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "vue",
+    "model-interface-pkg": "com.vue.core.models",
+    "model-impl-pkg": "com.vue.core.models.impl"
+  },
+  "name": "multifield",
+  "title": "Vue - Multifield",
+  "group": "SPA Vue Project - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": ["request"],
+    "generic-javadoc": false,
+    "properties-tabs": [
+      {
+        "id": "tab-1",
+        "label": "Multifield Simples",
+        "fields": ["multifieldOne"]
+      },
+      {
+        "id": "tab-2",
+        "label": "Multifield Composto",
+        "fields": ["multifieldTwo"]
+      }
+    ],
+    "properties": [
+      {
+        "field": "multifieldOne",
+        "type": "multifield",
+        "label": "Simples",
+        "model-name": "multifieldOneModel",
+        "use-existing-model": false,
+        "json-expose": true,
+        "items": [
+          {
+            "field": "textZero",
+            "type": "textfield",
+            "label": "Digite um texto:",
+            "json-expose": true,
+            "json-property": "textZero"
+          },
+          {
+            "field": "buttonOne",
+            "type": "textfield",
+            "label": "Digite um texto para o botão:",
+            "json-expose": true,
+            "json-property": "buttonOne"
+          }
+        ]
+      },
+      {
+        "field": "multifieldTwo",
+        "type": "multifield",
+        "label": "Composto",
+        "model-name": "multifieldTwoModel",
+        "use-existing-model": false,
+        "json-expose": true,
+        "items": [
+          {
+            "field": "textOne",
+            "type": "textfield",
+            "label": "Digite o 1° texto:",
+            "json-expose": true,
+            "json-property": "textOne"
+          },
+          {
+            "field": "textTwo",
+            "type": "textarea",
+            "label": "Digite o 2° texto:",
+            "json-expose": true,
+            "json-property": "textTwo"
+          }
+        ]
+      }
+    ]
+  }
+}
